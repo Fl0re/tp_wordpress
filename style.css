@@ -53,6 +53,7 @@ html {
 body {
 
 	margin: 0px;
+	color: #064659;;
 }
 
 article,
@@ -569,7 +570,10 @@ a:hover, a:active {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		align-content: center;
 	}
 }
 
@@ -731,8 +735,44 @@ a:hover, a:active {
 	clear: both;
 	margin: 0 0 1.5em;
 }
+#content{
+	color:#064659;
+	background-color: white;
+	display:flex;
+	padding:10px;
+
+	justify-content: center;
+	margin-top:10px;
+}
+#secondary{
+	display:none;
+}
+.site-description{
+	display:none;
+}
+.site-branding{
+	font-size: 20px;
+}
+
+.page_item{
+	display: flex;
+	justify-content: space-around
+}
+.page_item a {
+	
+	font-size:20px;
+	color: white;
+	text-decoration-color: none;
+	
+}
+.page_item a:hover{
+	font-size:25px;
+	color: #05137D;
+	
+}
+
 #page{
-	background-color: #404040
+	background-color: #21D2B0;
 }
 /*--------------------------------------------------------------
 ## Comments
@@ -744,6 +784,11 @@ a:hover, a:active {
 .bypostauthor {
 	display: block;
 }
+
+.entry-title a{
+	color: #FFFFFF
+}
+
 
 /*--------------------------------------------------------------
 # Infinite scroll
@@ -934,24 +979,26 @@ object {
 
 .cat-articles{
 	display: flex;
-color: white;
-	
+color: #064659;
+;
 }
 .flex{
 	border-right: 3px solid #BDBDBD;
 	margin-left:5px;
+	margin-top:100px;
 }
 .cat-article-title{
 	margin-left:5px;
+	margin-top:100px;
 	
+}
+.cat-title{
+	color: #10ADA8
 }
 
 #slide{
-    height: 250px;
-    width: 450px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
+    
+   
     text-align: center;
 }
 

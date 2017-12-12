@@ -7,7 +7,14 @@
  * @package tp_theme
  */
 
-get_header(); ?>
+get_header();
+$pop = get_option("custom_popup");
+if(isset($pop["article"])){
+    if($pop["article"] == 1){
+        echo "<script>alert(\"POP-UP D accueil\")</script>";
+    }
+};
+ ?>
 
 
     <div id="article-container">

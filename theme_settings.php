@@ -168,17 +168,17 @@ function display_slider($atts){
     $slide = new WP_Query( [
         "post_type" => "slide"
     ]);
-    var_dump($slide); die();
+  
     $slide_html = "<div id='slide'>";
     if($slide->have_posts()){
-        var_dump($thumbnail); die();
+      
         while($slide->have_posts()){
 
             $slide->the_post();
 
          
             $thumbnail = get_the_post_thumbnail_url(null, "medium");
-            var_dump($thumbnail); die();
+           
             $slide_html .= "<div class='all_slide'><img src='" . $thumbnail . "' />";
           
             $slide_html .= "</div>";
